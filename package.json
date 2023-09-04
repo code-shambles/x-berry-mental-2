@@ -1,0 +1,24 @@
+{
+  "name": "x-berry-mental-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-shambles/x-berry-mental-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-shambles/x-berry-mental-2/issues"
+  },
+  "homepage": "https://github.com/code-shambles/x-berry-mental-2#readme"
+}
