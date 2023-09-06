@@ -1,4 +1,4 @@
-name: Release
+name: Release dry-run
 on:
   workflow_dispatch:
     branches:
@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   release:
-    name: Release
+    name: Release dry-run
     runs-on: ubuntu-latest
     permissions:
       contents: write # to be able to publish a GitHub release
@@ -29,8 +29,8 @@ jobs:
         run: npm clean-install
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
-      - name: Release
+      - name: Release dry-run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: npx semantic-release --dry-run
