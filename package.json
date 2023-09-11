@@ -40,6 +40,7 @@
     "plugins": [
       "@semantic-release/github",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
       [
         "@semantic-release/changelog",
         {
