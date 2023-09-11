@@ -38,6 +38,8 @@
       "main"
     ],
     "plugins": [
+      "@semantic-release/github",
+      "@semantic-release/release-notes-generator",
       [
         "@semantic-release/changelog",
         {
